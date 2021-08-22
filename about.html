@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><p align="center" style="color:rgb(16, 179, 243);">{{title}}</p></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-style">
+
+  <div text-center>
+  <img src="assets/imgs/holidaypic2.jpeg" alt="Winter Picture" />
+  </div>
+  <br>
+
+  <button size="default" (click)="presentAlert()" ion-button color="danger" >ANNOUNCEMENT!</button> 
+
+  <ion-list>
+    <ion-list-header class="bg-style">Save the date: December 18th 2021</ion-list-header>
+
+    <h2>The Duffy Holiday Party!</h2>
+  <p>
+    It’s that time of the year again and we are already planning for next years(2022) party. The intent of 
+    this page is to get a conversation going in order to plan in enough time to have another successful 
+    party. I’m aware that many of us have ever-changing schedules, but it would be helpful if everyone 
+    could kindly respond by Wednesday, December 8th 2021 with the following information: how many people in 
+    your family will be coming to the party and what you are able to bring. Please review the list below to
+    see what you are able to bring.
+    <br>
+    <br>
+    ***As usual it will be BYOB but food, water and soft drinks will be provided.***
+  </p>
+
+  <h4>We will need the items below:</h4>
+
+  <p> CrockPot - 4 
+    <br>
+    Holiday Carols(printed) - 20 copies
+    <br>
+    Outside Heaters - 3
+    <br>
+    Coolers - 4 big or 8 small
+    <br>
+    Paper plates - 250 
+    <br>
+    Napkins - 500 count
+    <br>
+    Plastic silverware - 150 count(assorted box)
+    <br>
+    Bottled water - 4 cases(48 pack)
+    <br>
+    Pop - 1 Coke, 1 Diet Coke and 1 Sprite(12 pack)
+  </p>
+
+  <!-- <ion-item-sliding  *ngFor="let item of items; let i = index">
+    <ion-item>
+      <h2>{{item.name}}</h2>
+      <p>{{item.quantity}}</p>
+    </ion-item>
+    <ion-item-options>
+      <button (click)="removeItem(item, i)" ion-button color="secondary" icon-start>
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-fab bottom left>
+    <button (click)="addItem()" ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab> -->
+
+    <h6>Host contact information below:</h6>
+
+    <div>
+      <ion-card>
+        <ion-item class="bg-style" href="mailto:katduff1@gmail.com">
+          <ion-icon name="at" item-start></ion-icon>
+          <ion-label>katduff1@gmail.com</ion-label>
+        </ion-item>
+      
+        <ion-item class="bg-style">
+          <ion-icon name="call" item-start></ion-icon>
+          <ion-label>1-815-606-5192</ion-label>
+        </ion-item>
+
+        <ion-item class="bg-style">
+          <ion-icon name="map" slot="start"></ion-icon>
+          <ion-label>508 Meadowwood Drive <br> Joliet, IL 60431</ion-label>
+        </ion-item>
+      </ion-card>
+    </div>
+    <a href="https://goo.gl/maps/9asoWtdNrDhytHm39" target="_blank">Click for Winter Party location</a><span>|</span>
+    <div #map id="map"></div>
+
+  </ion-list>
+</ion-content>
+

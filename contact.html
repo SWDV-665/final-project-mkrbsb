@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><p align="center" style="color:rgb(134, 143, 6);">{{title}}</p></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-style">
+  <div text-center>
+  <img src="assets/imgs/summerparty2.jpeg" alt="Summer Picture" />
+  </div>
+  <br>
+
+<button size="default" (click)="presentAlert()" ion-button color="danger" >ANNOUNCEMENT!</button> 
+
+  <ion-list>
+    <ion-list-header class="bg-style">Save the date: June 25th 2022</ion-list-header>
+
+    <h2>The 606 Summer Party!</h2>
+  <p>
+    It’s that time of the year again and we are already planning for next years(2022) party. The intent of 
+    this page is to get a conversation going in order to plan in enough time to have another successful 
+    party. I’m aware that many of us have ever-changing schedules, but it would be helpful if everyone 
+    could kindly respond by Wednesday, June 15th 2022 with the following information: how many people in 
+    your family will be coming to the party and what you are able to bring. Please review the list below to
+    see what you are able to bring.
+    <br>
+    <br>
+    ***As usual it will be BYOB but food, water and soft drinks will be provided.***
+  </p>
+
+  <h4>We will need the items below:</h4>
+
+  <p> Ice - 10 bags(5lbs)
+    <br>
+    Bag Chairs - 20 
+    <br>
+    Cornhole Game
+    <br>
+    Coolers - 4 big or 8 small
+    <br>
+    Paper plates - 250 
+    <br>
+    Napkins - 500 count
+    <br>
+    Plastic silverware - 150 count(assorted box)
+    <br>
+    Bottled water - 4 cases(48 pack)
+    <br>
+    Pop - 1 Coke, 1 Diet Coke and 1 Sprite(12 pack)
+  </p>
+  
+<!-- 
+  <ion-item-sliding  *ngFor="let item of items; let i = index">
+    <ion-item>
+      <h2>{{item.name}}</h2>
+      <p>{{item.quantity}}</p>
+    </ion-item>
+    <ion-item-options>
+      <button (click)="removeItem(item, i)" ion-button color="secondary" icon-start>
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-fab bottom left>
+    <button (click)="addItem()" ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab> -->
+
+<h6>Host contact information below:</h6>
+    <div>
+      <ion-card>
+        <ion-item class="bg-style" href="mailto:genoshea@gmail.com">
+          <ion-icon name="at" item-start></ion-icon>
+          <ion-label>genoshea@gmail.com</ion-label>
+        </ion-item>
+      
+        <ion-item class="bg-style">
+          <ion-icon name="call" item-start></ion-icon>
+          <ion-label>1-815-606-8989</ion-label>
+        </ion-item>
+
+        <ion-item class="bg-style">
+          <ion-icon name="map" slot="start"></ion-icon>
+          <ion-label>606 Timberline Drive <br> Joliet, IL 60431</ion-label>
+        </ion-item> 
+      </ion-card>
+    </div>
+    <a href="https://goo.gl/maps/jCf6KWe7mxHqHgk78" target="_blank">Click for Summer Party location</a><span>|</span>
+    <div #map id="map_canvas"></div>
+
+  </ion-list>
+</ion-content>
